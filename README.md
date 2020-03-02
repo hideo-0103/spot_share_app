@@ -1,24 +1,23 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+場所共有アプリ
 
-* Ruby version
+Google map api を用いて場所を共有
+例)スケボーの練習スポット
+例)ダンスの練習ができるスポット(公民館、体育館)
 
-* System dependencies
+ユーザーには最初にユーザー情報(ニックネーム、パスワード、位置情報の使用許可)を入力してもらう
+ユーザーがスポットをお気に入り登録できる
+ユーザーの位置情報とカテゴリー、タグをもとに周辺のスポットを全てマップ上にピンを表示させる。
 
-* Configuration
+表示しているピンからgoogleMapAppに飛ばしてナビできるようにする
 
-* Database creation
+カテゴリーごとにスポットを検索できる
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+スポットの住所はtext型で登録
+スポットに対してタグ(室内OR屋外、個室、体育館など)を紐付けできる。
+スポットに対して1枠何時間なのか、1枠いくらなのか、予約方法などの情報を登録できる。
+スポットに対して施設名、説明文を登録できる。
+スポットに対して複数枚画像を登録できる
+スポットに対してgoogleMapApiで登録された住所をもとに地図上にピンを表示させる
