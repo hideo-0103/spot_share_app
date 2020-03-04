@@ -7,6 +7,18 @@ Google map api を用いて場所を共有
 例)スケボーの練習スポット
 例)ダンスの練習ができるスポット(公民館、体育館)
 
+# 第一段階
+- ユーザー登録
+- spot登録
+- spot編集機能
+- category登録&spotに対して紐付けて保存
+- categoryを残しつつ紐づきを解除(idを元に中間テーブルからのみ削除)
+- tag登録&spotに対して紐付けて保存
+- tagを残しつつ紐づきを解除(idを元に中間テーブルからのみ削除)
+- googlemap導入、住所を元にピン挿す
+- ユーザーの位置情報を取得してその位置を中心にマップ表示
+- ↪︎ 
+
 ## アップローダー
 - carrierwave
 
@@ -15,6 +27,8 @@ Google map api を用いて場所を共有
 - active_hash
 - ancestry(仮)
 - devise
+- gmaps4rails
+- geocoder
 
 ## 外部ライブラリ
 - googleMapAPI
