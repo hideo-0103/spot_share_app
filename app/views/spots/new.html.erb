@@ -1,0 +1,10 @@
+<%= form_with(model: @spot, local: true) do |form| %>
+  <%= form.fields_for :spot_images do |image| %>
+    <%= image.file_field :src %>
+  <%end%>
+  <%= form.label :name %>
+  <%= form.text_field :name %>
+  <%= form.label :addres %>
+  <%= form.text_field :address %>
+  <%= form.submit "登録" %>
+<% end %>
