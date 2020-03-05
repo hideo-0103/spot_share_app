@@ -1,1 +1,8 @@
-hello world
+<ul>
+  <li>
+    <% @spots.each do |spot|%>
+      <%= spot.name%>
+      <%= image_tag spot.spot_images[0].src.url, width: "300px", height:"300px"%>
+    <% end%>
+  </li>
+</ul>
