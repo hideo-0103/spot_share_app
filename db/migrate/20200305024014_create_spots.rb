@@ -3,6 +3,9 @@ class CreateSpots < ActiveRecord::Migration[6.0]
     create_table :spots do |t|
 
       t.string :name
+      t.string :description
+      t.float :latitude
+      t.float :longitude
       t.text :address
       t.timestamps
     end
