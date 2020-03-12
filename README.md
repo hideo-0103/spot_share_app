@@ -11,6 +11,7 @@ Google map api を用いて場所を共有
 - ユーザー登録 済み
 - spot登録 済み
 - spot編集機能
+- spot削除機能 済み
 - category登録&spotに対して紐付けて保存
 - categoryを残しつつ紐づきを解除(idを元に中間テーブルからのみ削除)
 - tag登録&spotに対して紐付けて保存

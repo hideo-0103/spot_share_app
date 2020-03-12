@@ -21,7 +21,15 @@ class SpotsController < ApplicationController
   def show
     @spot = Spot.find(params[:id])
     gon.spot_address = @spot.address
-    
+  end
+
+  def destroy
+    @spot = Spot.find(params[:id])
+    if @spot.destroy
+      redirect_to root_path
+
+    end
+
   end
   private
   

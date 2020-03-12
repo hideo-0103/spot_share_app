@@ -3,6 +3,7 @@
     <% @spots.each do |spot|%>
       <%= link_to spot.name, spot_path(spot.id)%>
       <%= image_tag spot.spot_images[0].src.url, width: "300px", height:"300px"%>
+      <%= link_to '削除', "/spots/#{spot.id}", method: :delete %>
     <% end%>
   </li>
 </ul>
