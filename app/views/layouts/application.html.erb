@@ -4,9 +4,14 @@
     <title>SpotShareApp</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGjsrV20EwlEtJoSjK1qN5ssvAeLdWJ7Y&callback=initMap" type="text/javascript"></script>
+    <script src="//cdn.rawgit.com/mahnunchik/markerclustererplus/master/dist/markerclusterer.min.js"></script>
+    <script src='//cdn.rawgit.com/printercu/google-maps-utility-library-v3-read-only/master/infobox/src/infobox_packed.js' type='text/javascript'></script>
+    <%= include_gon %>
   </head>
 
   <body>
