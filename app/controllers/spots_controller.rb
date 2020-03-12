@@ -6,6 +6,8 @@ class SpotsController < ApplicationController
   def new
     @spot = Spot.new
     @spot.spot_images.new
+    @categoty = Category.new
+    @spot.spot_categories.build
   end
 
   def create
@@ -34,7 +36,7 @@ class SpotsController < ApplicationController
   private
   
   def spot_params
-    params.require(:spot).permit(:name, :address, spot_images_attributes: [:src, :_destroy])
+    params.require(:spot).permit(:name, :address, { :category_ids=> [] },spot_images_attributes: [:src, :_destroy])
   end
 
 end

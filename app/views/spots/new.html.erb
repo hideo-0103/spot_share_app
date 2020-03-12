@@ -2,6 +2,7 @@
   <%= form.fields_for :spot_images do |image| %>
     <%= image.file_field :src %>
   <%end%>
+  <%= form.collection_check_boxes :category_ids, Category.all, :id, :name %>
   <%= form.label :name %>
   <%= form.text_field :name %>
   <%= form.label :addres %>
